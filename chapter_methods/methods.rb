@@ -1,10 +1,15 @@
-# mutate.rb
+# return.rb
 
-a = [1, 2, 3]
-def no_mutate(array)
-	array.last
+def add_three(number)
+	return number += 3
+	number += 4
 end
 
-p "Before no_mutate method: #{a}"
-p no_mutate(a)
-p "After no_mutate method: #{a}"
+returned_value = add_three(4)
+puts returned_value
+
+def just_assignment(number)
+	foo = number + 3
+end
+
+puts just_assignment(2)
