@@ -1,12 +1,13 @@
-# conditional.rb
+# case_tatement.rb
 
-puts "Give us a number, precious"
-a = gets.chomp.to_i
+a = 5
 
-if a == 3
-	puts "a is 3"
-elsif a == 4
-	puts "a is 4"
-else
-	puts "a is neither 3 nor 4"
-end
+case a
+	when 5
+		puts "a is 5"
+	when 6
+		puts "a is 6"
+	else
+		puts "a is neither 5 nor 6"
+	end
+
