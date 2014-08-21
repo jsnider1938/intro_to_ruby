@@ -2,9 +2,9 @@
 
 x = gets.chomp.to_i
 
-until x < 0  # <-- refactored to use the until
+begin
 	puts x
 	x -= 1
-end
+end while x >= 0
 
 puts "Done!"
