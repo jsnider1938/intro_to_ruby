@@ -1,10 +1,10 @@
-# countdown.rb
-
+puts "give me a number"
 x = gets.chomp.to_i
 
-begin
-	puts x
-	x -= 1
-end while x >= 0
+def countdown(num)
+  p num
+  num -= 1
+  num < 0 ? return : countdown(num)
+end
 
-puts "Done!"
+countdown(x)
