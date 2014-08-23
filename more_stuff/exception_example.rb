@@ -1,11 +1,13 @@
-# exception_example.rb
+# exception_example.rb  -- This program examines the rescue operator with the divide method
 
-names = ['bob', 'joe', 'steve', nil, 'frank']
-
-names.each do |name|
+def divide(number, divisor)
   begin
-    puts "#{name}'s name has #{name.length} letters in it."
-  rescue
-    puts "Something went wrong"
+    answer = number / divisor
+  rescue ZeroDivisionError => e
+    puts e.message
   end
 end
+
+puts divide(16, 4)
+puts divide(4, 0)
+puts divide(14, 7)
