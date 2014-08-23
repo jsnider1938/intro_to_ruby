@@ -1,7 +1,7 @@
 # procs.rb
 
-talk = Proc.new do 
-  puts "I am talking."
+talk = Proc.new do |name|
+  puts "I am talking to #{name}"
 end
 
-talk.call
+talk.call 'bob'
