@@ -5,7 +5,7 @@
 
 hash = {name: 'cupcake', weight: '5 lbs', color: 'black'}
 
-p hash.keys
-p hash.values
+hash.each_key { |k| puts "#{k}"}
+hash.each_value { |v| puts "#{v}"}
 
 hash.select { |k, v| puts "Her #{k} is #{v}"}
